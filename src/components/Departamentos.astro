@@ -1,0 +1,10 @@
+---
+import Body from "../components/Body.astro";
+
+const departmentClick = (event: { target: { id: any; }; }) => {
+    const departmentId = event.target.id;
+    if(departmentId){
+        window.location.href = `/departamentos/${departmentId}`
+    }
+}
+---
